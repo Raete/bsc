@@ -1,0 +1,44 @@
+@import '../../../scss/_variables';
+
+.note {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr auto;
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid darken( $background, 10% );
+    transition: $transition;
+
+    &:hover {
+        background:  darken( $background, 10% )
+     }
+
+    &_wrapper {
+        max-width: $width;
+        margin-top: 20px;
+    }
+
+    &_title  {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: left;
+        display:flex;
+        align-items:center;
+
+        h1 {
+            font-weight: 700;
+        }
+    }
+
+    &_control {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    &_edit {
+        margin-right: 10px;
+    }
+}
+
+.feedback {
+    margin-top: 30px;
+}

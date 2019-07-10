@@ -1,0 +1,38 @@
+@import '../../../scss/_variables';
+
+.menu {
+    border-bottom: 1px solid darken( $background, 10% );
+    font-family: $main_font;
+    
+    &_wrapper {
+        max-width: $width;
+        margin: 0 auto;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // desktop
+        @media screen and (min-width: 960px) {
+            padding: 10px 50px;
+        }
+    }
+}
+
+.logo {
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        right: -14px;
+        width: 9px;
+        height: 9px;
+        background: $color_second
+    }
+}

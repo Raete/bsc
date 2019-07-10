@@ -1,0 +1,33 @@
+@import '../../../scss/_variables';
+
+.header {
+    padding: 20px 10px;
+    color: $background;
+    margin: 0;
+    text-align: center;
+    &_name {
+        font-size: 100%;
+        font-weight: 700;
+    }
+}
+
+.form {
+    width: 100%;
+    background: $background;
+    padding: 40px;
+    border-radius: $radius;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.feedback {
+    font-size: 100%;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    color: $color_main;
+    background: darken( $background, 10% );
+    padding: 20px 10px;
+   
+}
