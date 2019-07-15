@@ -19,14 +19,14 @@ export class NoteService {
       }
 
     // data
-    notesCollection: AngularFirestoreCollection<Note>;
-    noteDoc: AngularFirestoreDocument<Note>;
+    notesCollection: AngularFirestoreCollection;
+    noteDoc: AngularFirestoreDocument;
     notes: Observable<Note[]>;
     note: Observable<Note>;
 
     // get note based on note id
-    getNote(id: string): Observable<Note> {
-        this.noteDoc = this.afs.doc<Note>(`notes/${id}`);
+    getNote(id: string) {
+        this.noteDoc = this.afs.doc(`notes/${id}`);
         this.note = this.noteDoc.snapshotChanges().pipe(map(action => {
         if(action.payload.exists === false) {
             return null;
@@ -40,8 +40,10 @@ export class NoteService {
         return this.note;
     }
 
+    
+
     // get all user's notes
-    getNotes(): Observable<Note[]> {
+    getNotes() {
     
         this.notes = this.afs.collection('notes', ref => {
             // ordered notes
@@ -62,7 +64,7 @@ export class NoteService {
     }
 
     // delete single note
-    deleteNote(id) {
+    deleteNote(id: string) {
         this.notesCollection.doc(id).delete();
     }
 

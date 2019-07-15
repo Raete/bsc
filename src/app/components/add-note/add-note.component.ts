@@ -19,7 +19,6 @@ export class AddNoteComponent {
         private thisDialog: MatDialogRef<AddNoteComponent>
     ) { }
 
-
     // data
     note: Note = {
         id: '',
@@ -28,7 +27,7 @@ export class AddNoteComponent {
         create: '',
     }
 
-    feedback: string;
+    feedback: boolean = false
 
     @ViewChild('noteForm') form: any;
 
@@ -47,7 +46,7 @@ export class AddNoteComponent {
             this.thisDialog.close()
 
         } else {
-            this.feedback = "Title is required."
+            this.feedback = true
         }
         // reset list title
         this.note.title = ''

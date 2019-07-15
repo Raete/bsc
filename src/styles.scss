@@ -22,23 +22,19 @@ body {
     }
 }
 
+// custom style material dialog
 .notes_custom_dialog_style .mat-dialog-container {
     padding: 0;
     border-radius: $radius;
     width: 500px
 }
 
-// dialog style
 .notes_custom_dialog_style .mat-dialog-content {
     margin: 0;
     padding: 0;
 }
 
-.menu_controls .mat-button-toggle-group {
-    box-shadow: none;
-    border: 1px solid darken( $background, 10% );
-}
-
+// color class
 .color-bg--second {
     background: $color_second;
 }
@@ -47,6 +43,7 @@ body {
     background: $color_main;
 }
 
+// alignment
 .center {
     text-align: center;
 }
@@ -57,8 +54,8 @@ body {
 @import '~@angular/material/theming';
 @include mat-core();
 
-$bsc-app-primary: mat-palette($mat-brown);
-$bsc-app-accent:  mat-palette($mat-red, 600);
+$bsc-app-primary: mat-palette($mat-blue-grey, 800);
+$bsc-app-accent:  mat-palette($mat-light-green, 800);
 $bsc-app-warn:    mat-palette($mat-red);
 
 $bsc-app-theme: mat-light-theme($bsc-app-primary, $bsc-app-accent, $bsc-app-warn);

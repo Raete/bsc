@@ -2,9 +2,9 @@
       
     <li class="note" *ngFor="let note of notes">
         <!-- note title -->
-        <a routerLink="/note/{{ note.id }}" class="note_title">
+        <div routerLink="/note/{{ note.id }}" class="note_title">
             <h1>{{note.title}}</h1>
-        </a>
+        </div>
         <!-- buttons (edit note, delete note) -->
         <div class="note_control">
             <button (click)="openEditDialog(note.id)" mat-icon-button color="primary" class="note_edit">
@@ -17,6 +17,5 @@
     </li>
 
 </ul>
-
 <!-- feedback if no notes-->
-<p *ngIf="notes.length == 0" class="feedback">Add some notes</p>
+<p i18n="feedback for no notes" *ngIf="notes.length == 0" class="feedback">Add some notes</p>

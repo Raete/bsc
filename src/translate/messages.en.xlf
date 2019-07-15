@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="d2f6d85d31d66f97b14a2b56b59b2d3f3b713de0" datatype="html">
+        <source>Add new note</source>
+        <target>Add new note</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/add-note/add-note.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">add new note dialog title</note>
+      </trans-unit>
+      <trans-unit id="fdf7cbdc140d0aab0f0b6c06065a0fd448ed6a2e" datatype="html">
+        <source>Title</source>
+        <target>Title</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/add-note/add-note.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-note/edit-note.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">label for note title</note>
+      </trans-unit>
+      <trans-unit id="eec715de352a6b114713b30b640d319fa78207a0" datatype="html">
+        <source>Description</source>
+        <target>Description</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/add-note/add-note.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-note/edit-note.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">label for note description</note>
+      </trans-unit>
+      <trans-unit id="2c8533cde7f6b74afcf4444047503d2e9d1752c0" datatype="html">
+        <source>Create note</source>
+        <target>Create note</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/add-note/add-note.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">create note button</note>
+      </trans-unit>
+      <trans-unit id="5e26c19758acf2a501b01b2a54cc8aa746815368" datatype="html">
+        <source>Your notes</source>
+        <target>Your notes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">app title</note>
+      </trans-unit>
+      <trans-unit id="ae71e50e3af26e6aa5b92544dac22b3c3a6e1fb4" datatype="html">
+        <source>Edit note</source>
+        <target>Edit note</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-note/edit-note.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-note/edit-note.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">edit note dialog title</note>
+      </trans-unit>
+      <trans-unit id="ed36990687b436f5bb5e18a67c0f462c9b1650ef" datatype="html">
+        <source> back to dashboard</source>
+        <target> back to dashboard</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/detail-note/detail-note.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">back button</note>
+      </trans-unit>
+      <trans-unit id="349d3f6af1da79a441435e11c6d6819d502b5d25" datatype="html">
+        <source>Title is required.</source>
+        <target> Title is required. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/add-note/add-note.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-note/edit-note.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">feedback, when title is missing</note>
+      </trans-unit>
+      <trans-unit id="818746ebd86b1536b54f2dbe4c220dab9895dbe1" datatype="html">
+        <source>Add some notes</source>
+        <target>Add some notes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/notes-list/notes-list.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">feedback for no notes</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

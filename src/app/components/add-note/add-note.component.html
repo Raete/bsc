@@ -1,11 +1,11 @@
 <!--  header of add note dialog  -->
 <header mat-dialog-title class="header color-bg--second">
         
-    <h1 class="header_name">Add new note</h1>
+    <h1 i18n="add new note dialog title" class="header_name">Add new note</h1>
         
 </header>
 <!-- feedback -->
-<p *ngIf="feedback" class="feedback">{{feedback}}</p>
+<p i18n="feedback, when title is missing" *ngIf="feedback" class="feedback">Title is required.</p>
 
 <!-- dialog content -->
 <mat-dialog-content>
@@ -14,10 +14,9 @@
     <form class="form" #noteForm="ngForm" (ngSubmit)="addNewNote()">
         <!-- title note input -->
         <mat-form-field appearance="legacy">
-            <mat-label>Title</mat-label>
+            <mat-label i18n="label for note title">Title</mat-label>
             <input 
                 matInput 
-                placeholder="Title"
                 type="text" 
                 name="title"
                 [(ngModel)]="note.title"
@@ -26,10 +25,9 @@
         </mat-form-field>
         <!-- about note input -->
         <mat-form-field appearance="legacy">
-            <mat-label>Description</mat-label>
+            <mat-label i18n="label for note description">Description</mat-label>
             <textarea
                 matInput 
-                placeholder="Description"
                 rows="5"
                 type="text" 
                 name="info"
@@ -38,7 +36,7 @@
         </mat-form-field>
         
         <!-- submit form button -->
-        <button type="submit" mat-flat-button color="accent">Create note</button>
+        <button i18n="create note button" type="submit" mat-flat-button color="accent">Create note</button>
     </form>  
 
 </mat-dialog-content>

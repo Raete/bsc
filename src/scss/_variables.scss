@@ -6,8 +6,8 @@
 $main_font: 'Open Sans', sans-serif;
 
 // color
-$color_second: #E53935;
-$color_main: #5D4037;
+$color_main: #37474F;
+$color_second: #558B2F;
 $color_third: #203341;
 $background: white;
 
@@ -16,5 +16,8 @@ $width: 1140px;
 
 // corners
 $radius: 8px;
-
+// animation
 $transition: 0.3s;
+
+// border
+$border: 1px solid darken( $background, 10% )

@@ -48,7 +48,14 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
-            }
+            },
+            "cs": {
+                "aot": true,
+                "i18nFile": "src/translate/messages.cs.xlf",
+                "i18nFormat": "xlf",
+                "i18nLocale": "cs",
+                "i18nMissingTranslation": "error"
+              }
           }
         },
         "serve": {
@@ -59,7 +66,10 @@
           "configurations": {
             "production": {
               "browserTarget": "bsc:build:production"
-            }
+            },
+            "cs": {
+                "browserTarget": "bsc:build:cs"
+              }
           }
         },
         "extract-i18n": {

@@ -1,9 +1,9 @@
 @import '../../../scss/_variables';
 
 .menu {
-    border-bottom: 1px solid darken( $background, 10% );
+    border-bottom: $border;
     font-family: $main_font;
-    
+    padding: 10px;
     &_wrapper {
         max-width: $width;
         margin: 0 auto;
@@ -17,8 +17,24 @@
             padding: 10px 50px;
         }
     }
+    // language buttons
+    &_item {
+        border: $border;
+        border-radius: 50%;
+        font-size: 14px;
+        padding: 8px;
+        transition: $transition;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        &:hover {
+            background: darken( $background, 10% )
+        }
+
+    }
 }
 
+// title
 .logo {
     cursor: pointer;
     position: relative;
@@ -26,6 +42,7 @@
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 700;
+    // dot after title
     &::after {
         content: "";
         position: absolute;
